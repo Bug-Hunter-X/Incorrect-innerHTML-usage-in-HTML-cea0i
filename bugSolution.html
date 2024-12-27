@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+
+  <script>
+    // Correctly selecting the div element before modifying its innerHTML
+    const myDiv = document.getElementById("myDiv");
+    myDiv.innerHTML = "New text!";
+  </script>
+</body>
+</html>
